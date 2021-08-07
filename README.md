@@ -15,7 +15,7 @@ This [Talend project](./TALEND_IMPORTSUBSCRIPTIONS) can be imported and build in
 In this project data in a csv fille list will be imported to PostgreSQL database. 
 A PostgreSQL database needs to be preconfigured. The database schema `(with sample data)` is included in [database-PostgreSQL](./database-PostgreSQL) directory.
 
-`Sample device_model table`
+`Sample subscription table`
 
 ![alttext](./images/Postgres-Subscription-Table.PNG?raw=true)
 
@@ -70,7 +70,7 @@ Location configured as `subsRoot` will be considered as the root directory for a
   - Validate against data type/length constrains
   and invalid records will be written to the file with name `source_file_name + '_subs_invalid'`
 2. Subscriber master data table configured as `postgresSubscriber` will be looked up by `Msisdn` for data availability and insert if not available.
-3. Service table configured as `postgresSubscriber` will be looked up by `Service_code` for data availability.
+3. Service table configured as `postgresService` will be looked up by `Service_code` for data availability.
   - If Service is available, subscription recored will be inserted to subscription table configured as `postgresSubscription`.
   - Other wise file record will be skipped and relevant data will be written to the file with `source_file_name + '_subs_skipped'`
 4. Completed file will be rename to `source_file_name + '_completed'` and moved to the location congired as `subsCompleted`
