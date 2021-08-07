@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_OP-RMPccEeukOZ6wKQex5A" name="subscriptionFile" dataPackage="_OP-RMfccEeukOZ6wKQex5A" Server="Localhost 127.0.0.1" FilePath="C:/Users/Chanaka Fernando/mySampleData/subscriptionMigration-Sample.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_OP-RMfccEeukOZ6wKQex5A" name="default" dataManager="_OP-RMPccEeukOZ6wKQex5A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_OP-RMvccEeukOZ6wKQex5A" id="_qZDRMPcbEeukOZ6wKQex5A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MUQ9APcdEeukOZ6wKQex5A" label="msisdn" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MUQ9AfcdEeukOZ6wKQex5A" label="service_code" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MUQ9AvcdEeukOZ6wKQex5A" label="subscribed_dttm" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MUQ9A_cdEeukOZ6wKQex5A" label="consent_id" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MUQ9BPcdEeukOZ6wKQex5A" label="expire_dttm" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

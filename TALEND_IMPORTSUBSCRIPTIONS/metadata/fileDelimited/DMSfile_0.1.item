@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_W53rgD4aEeufYKz5wmK7vw" name="DMSfile" dataPackage="_W53rgT4aEeufYKz5wmK7vw" Server="Localhost 127.0.0.1" FilePath="D:/my_sample_data/dms/schema/ADMSsample.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" RemoveEmptyRow="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_W53rgT4aEeufYKz5wmK7vw" name="default" dataManager="_W53rgD4aEeufYKz5wmK7vw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_W59yID4aEeufYKz5wmK7vw" id="_1onGMD4ZEeufYKz5wmK7vw" label="DMSschema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yIT4aEeufYKz5wmK7vw" label="MSISDN" length="20" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yIj4aEeufYKz5wmK7vw" label="IMEI" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yIz4aEeufYKz5wmK7vw" label="Brand" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yJD4aEeufYKz5wmK7vw" label="Model" length="100" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yJT4aEeufYKz5wmK7vw" label="GPRS" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yJj4aEeufYKz5wmK7vw" label="EDGE" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yJz4aEeufYKz5wmK7vw" label="UMTS" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yKD4aEeufYKz5wmK7vw" label="HSDPA" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yKT4aEeufYKz5wmK7vw" label="HSUPA" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yKj4aEeufYKz5wmK7vw" label="LTE" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yKz4aEeufYKz5wmK7vw" label="Data_Only" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yLD4aEeufYKz5wmK7vw" label="GSM_850" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yLT4aEeufYKz5wmK7vw" label="GSM_900" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yLj4aEeufYKz5wmK7vw" label="GSM_1800" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yLz4aEeufYKz5wmK7vw" label="GSM_1900" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yMD4aEeufYKz5wmK7vw" label="WCDMA_I_2100" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yMT4aEeufYKz5wmK7vw" label="WCDMA_II_1900" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yMj4aEeufYKz5wmK7vw" label="WCDMA_III_1800" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yMz4aEeufYKz5wmK7vw" label="WCDMA_IV_1700" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yND4aEeufYKz5wmK7vw" label="WCDMA_V_850" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yNT4aEeufYKz5wmK7vw" label="WCDMA_VI_800" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yNj4aEeufYKz5wmK7vw" label="WCDMA_VII_2600" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yNz4aEeufYKz5wmK7vw" label="WCDMA_VIII_900" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yOD4aEeufYKz5wmK7vw" label="WCDMA_XI_1500" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yOT4aEeufYKz5wmK7vw" label="LTE_Band_1" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yOj4aEeufYKz5wmK7vw" label="LTE_Band_2" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yOz4aEeufYKz5wmK7vw" label="LTE_Band_3" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yPD4aEeufYKz5wmK7vw" label="LTE_Band_4" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yPT4aEeufYKz5wmK7vw" label="LTE_Band_5" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yPj4aEeufYKz5wmK7vw" label="LTE_Band_6" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yPz4aEeufYKz5wmK7vw" label="LTE_Band_7" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yQD4aEeufYKz5wmK7vw" label="LTE_Band_8" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yQT4aEeufYKz5wmK7vw" label="LTE_Band_9" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yQj4aEeufYKz5wmK7vw" label="LTE_Band_11" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yQz4aEeufYKz5wmK7vw" label="LTE_Band_12" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yRD4aEeufYKz5wmK7vw" label="LTE_Band_13" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yRT4aEeufYKz5wmK7vw" label="LTE_Band_14" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yRj4aEeufYKz5wmK7vw" label="LTE_Band_17" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yRz4aEeufYKz5wmK7vw" label="LTE_Band_18" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59ySD4aEeufYKz5wmK7vw" label="LTE_Band_19" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yST4aEeufYKz5wmK7vw" label="LTE_Band_20" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59ySj4aEeufYKz5wmK7vw" label="LTE_Band_25" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59ySz4aEeufYKz5wmK7vw" label="LTE_Band_38" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yTD4aEeufYKz5wmK7vw" label="LTE_Band_39" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yTT4aEeufYKz5wmK7vw" label="LTE_Band_40" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yTj4aEeufYKz5wmK7vw" label="LTE_Band_41" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yTz4aEeufYKz5wmK7vw" label="LTE_Band_42" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yUD4aEeufYKz5wmK7vw" label="LTE_Band_43" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yUT4aEeufYKz5wmK7vw" label="LTE_Band_61" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yUj4aEeufYKz5wmK7vw" label="LTE_Band_62" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yUz4aEeufYKz5wmK7vw" label="LTE_Band_63" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yVD4aEeufYKz5wmK7vw" label="LTE_Band_28" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yVT4aEeufYKz5wmK7vw" label="OS_name" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yVj4aEeufYKz5wmK7vw" label="OS_version" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yVz4aEeufYKz5wmK7vw" label="IMSI" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yWD4aEeufYKz5wmK7vw" label="Device_Type" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yWT4aEeufYKz5wmK7vw" label="DualSIM" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yWj4aEeufYKz5wmK7vw" label="DetectionDate" length="-1" talendType="id_String" pattern="&quot;yyyy-MM-dd HH:mm:ss.&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W59yWz4aEeufYKz5wmK7vw" label="VoLTE" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
