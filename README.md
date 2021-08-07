@@ -26,19 +26,30 @@ Context variables needs to be congured according to the envirionment as mentione
 
 | Context Variable | Description  |
 --- | ---
-| operator_id | DMS operator id|
 | postgresHost | PostgreSQL database host IP| 
 | postgresPort | PostgreSQL database port| 
+| postgresDatabase | PostgreSQL database name| 
 | postgresUser | PostgreSQL database username| 
 | postgresPass | PostgreSQL database password| 
-| postgresDatabase | PostgreSQL database name| 
-| postgresDeviceModel | Device Model master data table name |
+| postgresService | Service master data table name |
 | postgresSubscriber | Subscriber table name |
-| dmsSkipped | Relative dir path to store skppied records |
-| dmsInvalid | Relative dir path to store invalid records |
-| dmsSource | Relative dir path to read source files |
-| dmsCompleted | Relative dir path to store completed files |
-| dmsRoot | Absolute dir path for root of the dir structure | 
+| postgresSubscription | Subscription table name |
+| subsSkipped | Relative dir path to store skppied records |
+| subsInvalid | Relative dir path to store invalid records |
+| subsSource | Relative dir path to read source files |
+| subsCompleted | Relative dir path to store completed files |
+| subsRoot | Absolute dir path for root of the dir structure | 
+| default_operator_id | Default Subscriber operator id|
+| default_cus_type | Default Subscriber type id|
+| default_pref_lang | Default Subscriber preferred language|
+| default_sub_status_id | Default Subscriber status id|
+| default_status_detail_id | Default Subscriber status detail id|
+| default_p_offer_id | Default Subscriber primary offer id|
+| default_brand_id | Default Subscriber brand id|
+| default_loyalty_id | Default Subscriber loyalty id|
+| default_category_id | Default Subscriber category id|
+| default_device_model_id | Default Subscriber device model id|
+
 
 
 `Example Configuration`
@@ -58,9 +69,9 @@ Location configured as `subsRoot` will be considered as the root directory for a
   - Validate against schema structure
   - Validate against data type/length constrains
   and invalid records will be written to the file with name `source_file_name + '_subs_invalid'`
-2. Device Model master data table configured as `postgresDeviceModel` will be looked up by `Model` for data availability and insert if not available.
-3. Subscriber table configured as `postgresSubscriber` will be looked up by `MSISDN` for data availability.
-  - If MSISDN is available, database record will be updated with `primary-key` value of the `Model` in Device Model master data table.
+2. Subscriber master data table configured as `postgresSubscriber` will be looked up by `Msisdn` for data availability and insert if not available.
+3. Service table configured as `postgresSubscriber` will be looked up by `Service_code` for data availability.
+  - If Service is available, subscription recored will be inserted to subscription table configured as `postgresSubscription`.
   - Other wise file record will be skipped and relevant data will be written to the file with `source_file_name + '_subs_skipped'`
 4. Completed file will be rename to `source_file_name + '_completed'` and moved to the location congired as `subsCompleted`
 
