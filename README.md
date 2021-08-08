@@ -1,4 +1,4 @@
-# Talend-importDMSdata
+# Talend-importSubscriptionData
 Talend Job to import Subscription (Service subscription) data in to subscription table in Postgres database and update insert missing Subscribers (Subscriber Profile) in to subscriber table with default attributes. 
 
 ![alttext](./images/TalendJob.PNG?raw=true)
